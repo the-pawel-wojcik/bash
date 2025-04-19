@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# case4-2: test a character
+# This program uses the ;;& symbol, introduced in bash version 4.0
+
+
+read -n 1 -p "Type a character > "
+
+echo
+
+case "$REPLY" in
+    ([[:upper:]])
+        echo "'$REPLY' is upper case. [[:upper:]]" ;;&
+    ([[:lower:]])
+        echo "'$REPLY' is lower case. [[:lower:]]" ;;&
+    ([[:alpha:]])
+        echo "'$REPLY' is alphabetic. [[:alpha:]]" ;;&
+    ([[:digit:]])
+        echo "'$REPLY' is a digit. [[:digit:]]" ;;&
+    ([[:graph:]])
+        echo "'$REPLY' is a visible character. [[:graph:]]" ;;&
+    ([[:punct:]])
+        echo "'$REPLY' is a punctuation symbol. [[:punct:]]" ;;&
+    ([[:space:]])
+        echo "'$REPLY' is a whitespace character. [[:space:]]" ;;&
+    ([[:xdigit:]])
+        echo "'$REPLY' is a hexadecimal digit. [[:xdigit:]]" ;;&
+esac
