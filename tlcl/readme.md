@@ -6,3 +6,5 @@ Shotts](https://linuxcommand.org/tlcl.php)
 `src/sys_info_page` is an argparse example.
 
 Run `src/posit-params` to see the `$*`, `"$*"`, `$@`, and `"$@"` differences.
+
+The `src/trap_demo` shows how to catch signals with `trap`.
