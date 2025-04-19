@@ -12,3 +12,8 @@ The `src/sys_info_page` script is an argparse example.
 The `show_user_info` script plays with `read` and `IFS`.
 
 The `src/trap_demo` script shows how to catch signals with `trap`.
+
+The `src/play_with_test` script goofs around tests.
+
+## TODO
+Add the `parallel` example.
