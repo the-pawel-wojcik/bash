@@ -3,7 +3,6 @@
 # case4-2: test a character
 # This program uses the ;;& symbol, introduced in bash version 4.0
 
-
 read -n 1 -p "Type a character > "
 
 echo

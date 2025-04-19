@@ -1,8 +1,11 @@
 #!/bin/bash
 # read-ifs: read fields from a file
+
 FILE=/etc/passwd
 read -p "Enter a username > " -e -i $USER user_name
+
 file_info="$(grep "^$user_name:" $FILE)"
+
 if [ -n "$file_info" ]; then
     IFS=":" read user pw uid gid name home shell <<< "$file_info"
     echo "User = '$user'"
